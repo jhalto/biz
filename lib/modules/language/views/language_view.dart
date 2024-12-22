@@ -1,5 +1,6 @@
  import 'package:biz/common/app_colors.dart';
 import 'package:biz/common/app_styles.dart';
+import 'package:biz/common/ui.dart';
 import 'package:biz/modules/language/cotrollers/language_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,9 +24,12 @@ class LanguageView extends GetView<LanguageController>{
            style: AppStyles.titleLarge.merge(
              TextStyle(
                color: Colors.white
-             )
+             ),
            ),
         ),
+        centerTitle: true,
+        automaticallyImplyLeading: true,
+        leading: Ui.backButton(),
       ),
 
     );
